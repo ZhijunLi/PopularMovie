@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PopularMovie</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_pop">sort by pop</string>
+    <string name="menu_rated">sort by rated</string>
+    <string name="menu_setting">Setting</string>
+    <string name="pref_layout">Change sort order</string>
+    <string name="sort_type_default">pop</string>
+    <string name="loding_title">Loading...</string>
+    <string name="loding_msg">Please wait...</string>
+    <string name="rank">vote</string>
+    <string name="vote_average">vote average</string>
+    <string name="vote_count">vote count</string>
+    <string name="release_date">release date</string>
+    <string name="error_json">JSON Error</string>
+    <string name="error_movie_not_find">can not find this movie</string>
+</resources>

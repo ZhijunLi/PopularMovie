@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <ImageView
+        android:id="@+id/iv_item_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_t"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:text="电影名称"/>
+        <TextView
+            android:id="@+id/tv_movie_rank"
+            android:layout_below="@id/tv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:text="评分："/>
+        <TextView
+            android:id="@+id/tv_movie_desc"
+            android:layout_below="@id/tv_movie_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:textColor="@color/white"
+            android:text="简述"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">热门电影</string>
+
+    <string name="menu_setting">设置</string>
+    <string name="menu_pop">按最受欢迎排序</string>
+    <string name="menu_rated">按评分最高排序</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="pref_layout">更改排序顺序</string>
+    <string name="sort_type_default">pop</string>
+    <string name="rank">评分</string>
+    <string name="title_activity_detail">详情</string>
+
+
+    <string name="loding_title">加载中...</string>
+    <string name="loding_msg">电影信息加载中...</string>
+
+    <string name="vote_average">评分</string>
+    <string name="vote_count">投票数</string>
+    <string name="release_date">上映日期</string>
+
+
+    <string name="error_json">JSON解析错误</string>
+    <string name="error_movie_not_find">电影不存在</string>
+
+</resources>

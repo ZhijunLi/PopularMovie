@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_type_title">
+        <item>按最受欢迎排序</item>
+        <item>按评分最高排序</item>
+    </string-array>
+    <string-array name="sort_type_value">
+        <item>pop</item>
+        <item>rated</item>
+    </string-array>
+</resources>
