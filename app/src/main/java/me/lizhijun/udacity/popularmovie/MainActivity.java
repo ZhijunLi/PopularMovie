@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         //显示ProgressDialog
         progressDialog = ProgressDialog.show(MainActivity.this,
                 this.getResources().getString(R.string.loding_title),
-                this.getResources().getString(R.string.loding_msg), true, false);
+                this.getResources().getString(R.string.loding_msg), true, true);
 
         httpUtil.setUrl(url[index]);
         httpUtil.setResposeListener(new HttpUtil.OnResponseListener() {

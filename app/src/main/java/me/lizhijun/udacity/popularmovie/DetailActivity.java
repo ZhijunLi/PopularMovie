@@ -57,7 +57,7 @@ public class DetailActivity extends AppCompatActivity {
 
         progressDialog = ProgressDialog.show(DetailActivity.this,
                 this.getResources().getString(R.string.loding_title),
-                this.getResources().getString(R.string.loding_msg), true, false);
+                this.getResources().getString(R.string.loding_msg), true, true);
 
         HttpUtil httpUtil = new HttpUtil(String.format(baseUrl,id),HttpUtil.METHOD_GET,null);
         httpUtil.setResposeListener(new HttpUtil.OnResponseListener() {
