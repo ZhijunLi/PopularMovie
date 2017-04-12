@@ -1,5 +1,6 @@
 package me.lizhijun.udacity.popularmovie.utils;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -25,6 +26,8 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
+import me.lizhijun.udacity.popularmovie.R;
+
 /**
  * 封装的一个简单的网络请求库，兼容Https协议，Https协议全部通过
  * Created by lizhijun on 2017/4/11.
@@ -39,9 +42,11 @@ public class HttpUtil {
 
     private WebTask task;
     private OnResponseListener listener;
+    private Context context;
 
 
-    public HttpUtil(String url,String method,String params){
+    public HttpUtil(Context context,String url,String method,String params){
+        this.context = context;
         this.url = url;
         this.method = method;
         this.params = params;
@@ -173,7 +178,7 @@ public class HttpUtil {
             } catch (ConnectException ce) {
                 return ce.toString();
             } catch (Exception e) {
-                return "网络错误，请检查网络再重试";
+                return context.getResources().getString(R.string.error_network);
             }
             return resultJson;
         }
@@ -225,7 +230,7 @@ public class HttpUtil {
                 }
                 resultStr = buffer.toString();
             } catch (IOException e) {
-                return "网络错误，请检查网络再重试";
+                return context.getResources().getString(R.string.error_network);
             } finally{
                 if (urlConnection != null) {
                     urlConnection.disconnect();

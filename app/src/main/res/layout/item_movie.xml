@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="240dp">
+    android:layout_height="@dimen/cover_height">
 
     <ImageView
         android:id="@+id/iv_item_movie"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/cover_height"
         android:background="@color/colorAccent"
         android:scaleType="centerCrop"/>
 
@@ -23,7 +24,7 @@
             android:gravity="center_horizontal"
             android:lines="1"
             android:textColor="@color/white"
-            android:text="电影名称"/>
+            tools:text="电影名称"/>
         <TextView
             android:id="@+id/tv_movie_rank"
             android:layout_below="@id/tv_movie_title"
@@ -32,7 +33,7 @@
             android:gravity="center_horizontal"
             android:lines="1"
             android:textColor="@color/white"
-            android:text="评分："/>
+            tools:text="评分："/>
         <TextView
             android:id="@+id/tv_movie_desc"
             android:layout_below="@id/tv_movie_rank"
@@ -41,7 +42,7 @@
             android:gravity="center_horizontal"
             android:lines="2"
             android:textColor="@color/white"
-            android:text="简述"/>
+            tools:text="简述"/>
     </RelativeLayout>
 
 </RelativeLayout>

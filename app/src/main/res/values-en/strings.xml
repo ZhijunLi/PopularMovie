@@ -15,4 +15,5 @@
     <string name="release_date">release date</string>
     <string name="error_json">JSON Error</string>
     <string name="error_movie_not_find">can not find this movie</string>
+    <string name="error_network">Network error, please check the network and try again</string>
 </resources>
